@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="top-container">
+        <div class="top-left-container">
+          <h2 class="weather-condition-heading">Sunny</h2>
+          <h4 class="place-heading">Nagercoil</h4>
+          <h5 class="date-heading">Sunday, 13th Aug 23</h5>
+          <h5 class="time-heading">12:00 AM</h5>
+          <h1 class="temperature-heading">85 &deg;F</h1>
+          <p class="temperature-toggle" id="f">Display &deg;C</p>
+
+          <span><img src="#" alt="" id="temperature-icon" /></span>
+          <div class="input-row">
+            <input type="search" placeholder="Search Location" />
+            <span class="material-symbols-outlined search"> search </span>
+            <span class="error"></span>
+          </div>
+        </div>
+        <div class="top-right-container">
+          <div class="right-item">
+            <div class="right-icon">
+              <img
+                src="../src/SVG/thermo.svg"
+                alt=""
+                class="feels-like-icon"
+                width="24px"
+              />
+            </div>
+            <div class="right-text">
+              <p class="feels-like-heading">Feels Like</p>
+              <h2 class="feels-like"></h2>
+            </div>
+          </div>
+          <div class="right-item">
+            <div class="right-icon">
+              <img
+                src="../src/SVG/humidity.svg"
+                alt=""
+                class="humidity-icon"
+                width="24px"
+              />
+            </div>
+            <div class="right-text">
+              <p class="humidity-heading">Humidity</p>
+              <h2 class="humidity"></h2>
+            </div>
+          </div>
+          <div class="right-item">
+            <div class="right-icon">
+              <img
+                src="../src/SVG/rainy.svg"
+                alt=""
+                class="cor-icon"
+                width="24px"
+              />
+            </div>
+            <div class="right-text">
+              <p class="cor-heading">Chance of rain</p>
+              <h2 class="cor"></h2>
+            </div>
+          </div>
+          <div class="right-item">
+            <div class="right-icon">
+              <img
+                src="../src/SVG/wind.svg"
+                alt=""
+                class="wind-icon"
+                width="24px"
+              />
+            </div>
+            <div class="right-text">
+              <p class="wind-heading">Wind Speed</p>
+              <h2 class="wind"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-main-container">
+        <div class="bottom-header">
+          <span>Daily</span>
+        </div>
+        <div class="bottom-container"></div>
+      </div>
+    </div>
+  </body>
+</html>
